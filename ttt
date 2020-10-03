@@ -1,0 +1,33 @@
+positions = ["l[0]", 'l[1]', 'l[2]', 'm[0]', 'm[1]', 'm[2]', 'k[0]', 'k[1]', 'k[2]']
+l=[' ',' ',' ']
+m=[' ',' ',' ']
+k=[' ',' ',' ']
+player1l=[]
+p=[]
+player2=[]
+s=[]
+player2 = 'x'
+player1 = 'o'
+x = 1
+if x >= 1:
+    while True:
+        if x % 2 == 0:
+            n = input(f"Player 2, Choose the location from below, you want to strike \n{positions}\t")
+            if n in positions:
+                x += 1
+                positions.remove(n)
+            else:
+                print("This location doesnt exist")
+
+        elif x % 2 == 1:
+            n = input(f"Player 1, Choose the location from below, you want to strike \n{positions}\t")
+            if n in positions:
+                x += 1
+                positions.remove(n)
+            else:
+                print("This location doesnt exist")
+
+
+
+
+
